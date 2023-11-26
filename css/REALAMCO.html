@@ -1,0 +1,121 @@
+!DOCTYPE html>
+<html> 
+    <head>
+        <title> FORM VALIDATION</title>
+        <style>
+            .error{
+                color: red;
+            }
+        </style>
+        <script>
+            function validateForm(){
+                var FULLNAME =
+                document.forms["my form"]
+                ["age"].value;
+                 var age=document.forms["my form"]
+                 [age].value;
+                 var class=document.forms["my form"]
+                 ["class"].value
+                 var entry=document.forms["my form"]
+                 ["entry"].value;
+                 var GENDER=
+                 document.forms["my form"]
+            ["gender"].value;
+            var dob=document.forms["my form<"]
+            ["gender"].value;
+            var errorDiv=
+            document.getElementById("errorDIV")
+            
+            errorDiv.innerHTML=" ";
+
+            if (FULLNAME==""){
+                showError(" please enter your full name");
+                return false;
+            }
+            if(age==""){
+                showError("please enrer your age");
+                return false;
+            }
+            if(class==""){
+                showError("please enter your entry");
+                return false;
+            }
+            if(entry ==""){
+                showError("please enter your entry");
+                return false;
+            }
+            if(gender ==""){
+                showError("please select your gender");
+            }
+            if(dob==""){
+                showError("please enter your day of birth");
+                return false;
+            }
+            function showError(errormessage){
+                var errorDiv=
+                document.getElementByld("errorDiv");
+                var errorText=
+                document.createElement("p");
+                errorText.classList.add("error");
+                errorText.textContent=errormessage;
+                errorDiv.appendChild(errorText);
+            }
+        </script>
+    </head>
+    <body>
+    <h1> Form VALIDATION</h1>
+    <link rel="stylesheet" type="text/css" href="amco.css">
+</head>
+<body>
+    <form action="RECIEPT.HTML"
+    fieldset style="background-color: rgb(133, 71, 133);"></fieldset>
+    <label style="color: rgb(248, 250, 249);"><img src="AMCO LOGO.jpg" style="height: 10%;width:10%;"><center><h1>ANGLICAN MODEL COLLEGE</h1></center></label>
+    <Blockquote></Blockquote> <marquee behavior="text-align" direction="right" style="color: rgba(249, 250, 250, 0.74);">ANGLICAN MODEL COLLEGE:<i>FORWARD INTO LIGHT.</i></marquee>
+    <label for="FULLNAME">FULLNAME</label>
+    <input type="text" placeholder="FULLNAME">
+    <BR><BR><br><br>
+        <LABEL for="AGE">AGE</LABEL>
+        <INPUT type="number" placeholder="AGE">
+            <BR><BR><BR><BR>
+                <LABEL for="name">GENDER:</LABEL><BR>
+                <label for="name">MALE</label>
+            <input type="radio" name="GENDER" value="male"><br><br>
+            <label for="name">FEMALE</label>
+            <input type="radio" name="GENDER" value="female">
+            <BR><BR><BR><BR>
+                <label for="DATE OF BIRTH">DATE OF BIRTH</label>
+                <INPUT type="date" placeholder="DATE">
+                    <BR><BR><BR><BR>
+        <label for="PHONE NUMBER">PHONE NUMBER</label>
+        <input type="number" placeholder="PHONE NUMBER">
+        <BR><BR><br><br>
+            <label for="PARENT OR GAURDIAN HOME ADRESS"> PARENT OR GUARDIAN HOME ADRESS</label>
+            <INPUT type="text" placeholder="PARENT OR GUARDIAN HOME ADRESS">
+                <BR><BR><BR><BR>
+                    <Label for="STATE OF ORIGIN">STATE OF ORIGIN</Label>
+                    <input type="text" placeholder="STATE OF ORIGIN">
+                    <br><br><br><br>
+                    <label for="PASSPORT">PASSPORT</label>
+                    <input type="file" id="my file" name="filename"  placeholder="PASSPORT">
+                    <br><br><br><br>
+                    <label for="class ENTRY">CLASS ENTRY</label>
+                    <input type="text" placeholder="class entry">
+                    <BR><BR><BR><BR>
+                    <label for="FORMER SCHOOL"> FORMER SCHOOL</label>
+                    <input type="text" placeholder="FORMER SCHOOL">
+                    <BR><BR><BR><BR>
+                    <hI style="color: white;">PLEASE NOTE TO PROCESS YOUR REQUEST THE AMOUNT OF 2500 MUST BE PAID TO THIS ACCOUNT 9858-8474-3747 AMCO AT FIRST BANK, THANK YOU</hI>  
+                   <BR><BR><BR><BR>
+                    <label for="UPLOAD RECIEPT OF PAYMENT"> EVIDENCE OF PAYMENT</label> 
+                    <input type="file" id="my file" name="filename"  placeholder="UPLOAD RECIEPT OF PAYMENT">
+                    <br><br><br><br>
+                    <i class="fa-brands fa-whatsapp fa-bounce fa-xs">08036139210</i>
+
+
+                    <input type="submit" style="color: lightseagreen;">
+    </form>
+    <script src="scrip.js"></script>
+</body>
+</html></html>
+
+                

@@ -1,0 +1,59 @@
+css
+body{
+    background-image: url(AMCO\ LOGO.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+body.loaded{
+    opacity: 1;
+}
+{
+    font-family: Arial,sans-serif;
+    margin:0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+input, select{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10%;
+}
+input[type="text"] {
+    max-width: 250px;
+}
+input[type="number"] {
+    max-width: 250px;
+}
+input[type="date"] {
+    max-width: 250px;
+}
+input[type="radio"] {
+    margin: -120.89px;
+    padding: 10.10px;
+    transform: translateY(-18px);
+}
+
+
